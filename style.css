@@ -1,0 +1,80 @@
+html, body {
+    color: #fff;
+    margin: 1% 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    background: linear-gradient(to right, rgb(118, 184, 82), rgb(141, 194, 111));
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 200%;
+    font-weight: 400;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 30rem;
+}
+
+.flex-input-w-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.btn-en, .btn-dec {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px 10px;
+    position: relative;
+    background-color: #fff;
+    border: 0;
+    border-radius: 200px;
+    outline: 0;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    border-radius: 200px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+    outline: 0;
+}
+
+.btn.btn-en::after, .btn.btn-dec::after {
+    background-color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
