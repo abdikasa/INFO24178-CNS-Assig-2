@@ -78,3 +78,12 @@ header img {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
+
+.output h1 {
+    padding-bottom: 0.10em;
+    border-bottom: 2px dotted #fff;
+}
+
+.output p {
+    font-size: 130%;
+}
